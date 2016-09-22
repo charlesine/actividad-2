@@ -33,10 +33,49 @@ nav{
 	height: 60px;
 }
 
-nav h2{
-	font-size: 40px;
-	text-align: center;
-	line-height: 60px;
+#header{
+	margin: auto;
+	width: 700px;
+	font-family:Arial, helvetica, sans-serif;
+}
+
+ul, ol{
+	list-style: none;
+}
+ 
+.nav li a{
+	background-color: #orange;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 15px;
+	display:block;
+}
+
+.nav > li{
+	float: left;
+}
+
+.nav li a:hover{
+	background: #434343;
+}
+
+.nav li ul{
+	display:none;
+	position:absolute;
+	min-width: 140px;
+}
+
+.nav li:hover> ul{
+	display:block;
+}
+
+.nav li ul li {
+	position: relative;
+}
+
+.nav li ul li ul{
+	right: -140px;
+	top: 0px;
 }
 
 #contenido{
